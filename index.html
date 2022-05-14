@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Todos</title>
+
+  <!-- Fontawesome icons library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS styles -->
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header class="header">
+    <!-- Header title wrapper -->
+    <div class="header__title">
+      <h1>Todos</h1>
+    </div>
+
+    <!-- Header search wrapper -->
+    <div class="header__search">
+      <input type="text" class="search__searchbox" id="searchbox" placeholder="Search todos" autofocus>
+      <div class="search__clear hide" id="clear-search"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+  </header>
+
+  <main class="wrapper flex-y">
+    <!-- New todo creation form -->
+    <section class="new-todo">
+      <div class="form-wrapper">
+        <form action="" class="new-todo__form center-align-max-width" id="new-todo-form">
+          <input type="text" name="todoInput" class="new-todo__form__input" placeholder="What's on your mind?" required>
+          <button class="new-todo__form__button"><span>Add todo</span></button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Todo list wrapper -->
+    <div class="list-wrapper flex-y">
+      <section class="todos">
+        <!-- Todo lists -->
+      </section>
+
+      <!-- Default message -->
+      <section class="default-msg flex-y hide">
+        <div class="default-msg__icon">¯\_(ツ)_/¯</div>
+        <p class="default-msg__text">No todos to show</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Modals and popups -->
+  <section class="modals">
+    <!-- Todo addition success modal -->
+    <div class="modal modal--notify-success" id="todo-addition-success-mod">
+      <div class="modal__status"><i class="fa-solid fa-circle-check"></i></div>
+      <div class="modal__content"><span>Todo added successfully!</span></div>
+    </div>
+
+    <!-- Todo removal success modal -->
+    <div class="modal modal--notify-success" id="todo-removal-success-mod">
+      <div class="modal__status"><i class="fa-solid fa-circle-check"></i></div>
+      <div class="modal__content"><span>Todo removed successfully!</span></div>
+    </div>
+  </section>
+
+  <!-- Bundled js -->
+  <script src="bundle.js"></script>
+</body>
+</html>
