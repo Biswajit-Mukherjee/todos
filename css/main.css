@@ -78,14 +78,14 @@
   background: var(--main-bg);
   color: var(--main-color);
   margin-top: var(--main-mg-top);
-  padding: var(--main-padding);
+  padding: 0 var(--main-padding) var(--main-padding);
   position: relative;
 }
 
 /* New todo form styling */
 .wrapper .new-todo {
-  background: #fbfbfb;
-  border-bottom: 1px solid #f0f0f0;
+  background: rgb(var(--main-bg-rgb));
+  border-bottom: 1px solid #f3f3f3;
   height: 4rem;
   position: sticky;
   top: var(--main-mg-top);

@@ -2,25 +2,26 @@
 
 :root {
     --card-border-radius: 6px;
-    --card-shadow-rgb_half: 20, 24, 27;
-    --card-shadow-rgb_double: 40, 44, 47;
+    --card-shadow-rgb_half: 30, 34, 37;
+    --card-shadow-rgb_double: 60, 64, 67;
     --card-border: #f0f0f0;
     --card-elevation: -.48px -.1px 2.4px 0 rgba(var(--card-shadow-rgb_half), 0.24), 2.5px 2.2px 4.8px 0 rgba(var(--card-shadow-rgb_double), 0.12);
 
     --acc-clr-100: hsl(220, 95%, 95%);
     --acc-clr-200: hsl(220, 95%, 90%);
     --acc-clr-400: hsl(220, 95%, 57%);
+    /* --acc-clr-400: #62dafb; */
     --acc-clr-500: hsl(220, 96%, 37%);
     --acc-clr-600: hsl(220, 96%, 27%);
     --clr-white: white;
 
-    --main-bg-rgb: 248, 248, 248;
+    --main-bg-rgb: 252, 252, 252;
     --main-bg: rgba(var(--main-bg-rgb), .36);
     --main-color: #2b2b2b;
     --main-padding: 1.25rem;
     --main-mg-top: var(--header-height);
 
-    --header-border-light: rgb(var(--main-bg-rgb));
+    --header-border-light: #f8f8f8;
     --header-border: var(--header-border-light);
     --header-height: 4.25rem;
     --searchbox-height: 2.5rem;
